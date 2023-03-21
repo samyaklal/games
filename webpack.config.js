@@ -4,7 +4,7 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 const deps = require("./package.json").dependencies;
 module.exports = {
   output: {
-    publicPath: "http://localhost:4002/",
+    publicPath: "https://stirring-semifreddo-e6480b.netlify.app/",
   },
 
   resolve: {
@@ -44,8 +44,8 @@ module.exports = {
       name: "games",
       filename: "remoteEntry.js",
       remotes: {
-        hangman: "hangman@http://localhost:4000/remoteEntry.js",
-        ticTacToe: "tic_tac_toe@http://localhost:4001/remoteEntry.js",
+        hangman: "hangman@https://resplendent-sfogliatella-2e34ee.netlify.app/remoteEntry.js",
+        ticTacToe: "tic_tac_toe@https://scintillating-dragon-d0664b.netlify.app/remoteEntry.js",
       },
       exposes: {},
       shared: {
